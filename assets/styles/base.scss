@@ -154,6 +154,7 @@ article {
   & > .tags {
     list-style: none;
     padding-left: 0;
+    padding-bottom: 3em;
 
     & .meta {
       & > h1 {
@@ -328,9 +329,9 @@ hr {
 
 article > h1 {
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 4rem;
   @media (max-width:1200px) {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: left;
   }
 }
