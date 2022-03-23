@@ -24,12 +24,9 @@ window.addEventListener('DOMContentLoaded', () => {
   toggleSwitch.addEventListener('change', switchTheme, false)
 
   if (currentTheme === 'dark') {
-    toggleSwitch.checked = true
-  }
-})
-
-
-//code from codista:
+    toggleSwitch.checked = true;
+    
+    //code from codista:
 
 function setFlickerAnimation() {
   // get all elements that should be animated
@@ -74,3 +71,8 @@ function setFlickerAnimation() {
 }
 
 //code from codista is done
+
+  }
+})
+
+
