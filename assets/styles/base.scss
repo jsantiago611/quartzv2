@@ -7,11 +7,11 @@
 }
 
 @font-face {
-  font-family: 'Eina';
+  font-family: "Eina";
   font-style: normal;
   font-weight: 400;
-  src: local('Eina'),
-       url('../fonts/eina-400-regular.woff2') format('woff2'); /* Chrome 26+, Opera 23+, Firefox 39+ */
+  src: local("Eina"),
+       url("../fonts/eina-400-regular.woff2") format("woff2"); /* Chrome 26+, Opera 23+, Firefox 39+ */
 }
 
 h1 {
@@ -19,7 +19,7 @@ h1 {
 }
 
 h1, h2, h3, h4, h5, h6, ol, ul, thead {
-  font-family: Eina;
+  font-family: "Eina", sans-serif;
   color: var(--dark);
   font-weight: revert;
   margin: revert;
