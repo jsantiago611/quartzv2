@@ -67,6 +67,8 @@ window.addEventListener('DOMContentLoaded', () => {
             const count = el.dataset.flickerChars ? parseInt(el.dataset.flickerChars) : undefined
             el.innerHTML = wrapRandomChars(text, count);
           });
+              
+              return "hello";
         }
             //max code ends----------------------------------
       }
