@@ -26,11 +26,11 @@ window.addEventListener('DOMContentLoaded', () => {
   if (currentTheme === 'dark') {
     toggleSwitch.checked = true;
     
-    //-----------------------------------------------------------------------------
-function setFlickerAnimation() {
+    //max code begins------------------------------------------
+    function setFlickerAnimation() {
   // get all elements that should be animated
   const animatedElements = Array.from(
-    document.querySelectorAll(".flicker")
+    document.querySelectorAll("h1.flicker")
   );
 
   if (!animatedElements.length) {
@@ -68,8 +68,6 @@ function setFlickerAnimation() {
     el.innerHTML = wrapRandomChars(text, count);
   });
 }
-    //function code done
-  }
+    //max code ends----------------------------------
+      }
 })
-
-
