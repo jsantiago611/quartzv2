@@ -40,14 +40,14 @@
 
 // only run in dark mode. for every other letter, offset the animation 
 // and reverse its direction, so the flickering appears more random.
-[data-theme='dark'] .flicker {
+
   animation: flicker 3s linear forwards alternate infinite;
 
   &:nth-child(even) {
     animation-delay: 0.3s;
     animation-direction: alternate-reverse;
   }
-}
+
 
 // if the user prefers reduced motion,
 // disable the animation entirely.
