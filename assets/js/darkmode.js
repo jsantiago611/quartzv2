@@ -24,7 +24,7 @@
       // make sure we don't wrap a space or punctuation char
       // or hit the same letter twice
       if (!excludedIndexes.includes(randIndex) && !excludedChars.includes(c)) {
-        chars[randIndex] = `<span class="flicker">${c}</span>`;
+        chars[randIndex] = `<span class="h1 flicker">${c}</span>`;
         excludedIndexes.push(randIndex);
         i++;
       }
