@@ -25,13 +25,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
   if (currentTheme === 'dark') {
     toggleSwitch.checked = true;
-    return "dark mode yay";
     
           //max code begins------------------------------------------
             function setFlickerAnimation() {
           // get all elements that should be animated
           const animatedElements = Array.from(
-            document.querySelectorAll(".darkmode.flicker")
+            document.querySelectorAll("h1")
           );
 
           if (!animatedElements.length) {
