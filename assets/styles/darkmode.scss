@@ -13,7 +13,51 @@
     box-sizing: border-box;
   }
 
-  
+  & .flicker {
+// keyframe animation to abruptly toggle
+// the letter's opacity value.
+@keyframes flicker {
+  0%,
+  19.999%,
+  22%,
+  62.999%,
+  64%,
+  64.999%,
+  72%,
+  100% {
+    opacity: 1;
+  }
+  20%,
+  21.999%,
+  63%,
+  63.999%,
+  65%,
+  71.999% {
+    opacity: 0.33;
+  }
+}
+
+
+// only run in dark mode. for every other letter, offset the animation 
+// and reverse its direction, so the flickering appears more random.
+[data-theme='dark'] .flicker {
+  animation: flicker 3s linear forwards alternate infinite;
+
+  &:nth-child(even) {
+    animation-delay: 0.3s;
+    animation-direction: alternate-reverse;
+  }
+}
+
+// if the user prefers reduced motion,
+// disable the animation entirely.
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0s !important;
+    transition-duration: 0s !important;
+  }
+}
+}
 
   & svg {
     opacity: 0;
