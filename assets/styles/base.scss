@@ -323,7 +323,11 @@ hr {
 }
 
 article > h1 {
-  font-size: 2em;
+  text-align: center;
+  font-size: 3.5rem;
+  @media (max-width:660px) {
+    font-size: 2rem;
+  }
 }
 
 header {
