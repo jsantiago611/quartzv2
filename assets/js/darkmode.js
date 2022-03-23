@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
 function setFlickerAnimation() {
   // get all elements that should be animated
   const animatedElements = Array.from(
-    document.querySelectorAll("h1")
+    document.querySelectorAll(".flicker")
   );
 
   if (!animatedElements.length) {
@@ -52,7 +52,7 @@ function setFlickerAnimation() {
       // make sure we don't wrap a space or punctuation char
       // or hit the same letter twice
       if (!excludedIndexes.includes(randIndex) && !excludedChars.includes(c)) {
-        chars[randIndex] = `<span class="h1">${c}</span>`;
+        chars[randIndex] = `<span class="flicker">${c}</span>`;
         excludedIndexes.push(randIndex);
         i++;
       }
