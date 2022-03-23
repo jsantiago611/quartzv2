@@ -30,7 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
 function setFlickerAnimation() {
   // get all elements that should be animated
   const animatedElements = Array.from(
-    document.querySelectorAll(".js-darkmode-flicker")
+    document.querySelectorAll("h1.flicker")
   );
 
   if (!animatedElements.length) {
