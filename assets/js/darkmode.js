@@ -1,3 +1,4 @@
+class DarkMode {
 const userPref = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
 const currentTheme = localStorage.getItem('theme') ?? userPref
 
@@ -71,5 +72,5 @@ function setFlickerAnimation() {
     //function code done
   }
 })
-
+}
 
