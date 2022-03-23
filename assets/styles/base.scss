@@ -145,6 +145,10 @@ article {
   & > .meta {
     margin: -1.5em 0 1em 0;
     opacity: 0.7;
+    text-align:center;
+    @media (max-width:1200px) {
+      text-align:left;
+    }
   }
 
   & > .tags {
@@ -325,8 +329,9 @@ hr {
 article > h1 {
   text-align: center;
   font-size: 3.5rem;
-  @media (max-width:660px) {
+  @media (max-width:1200px) {
     font-size: 2rem;
+    text-align: left;
   }
 }
 
