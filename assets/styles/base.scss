@@ -7,10 +7,10 @@
 }
 
 @font-face {
-  font-family: 'Eina';
+  font-family: 'Graphik';
   font-style: normal;
   font-weight: 400;
-  src: local('Eina'),
+  src: local('Graphik'),
        url(../fonts/Graphik-Bold-Web.woff2) format('woff2'); // Chrome 26+, Opera 23+, Firefox 39+  
 }
 
@@ -19,7 +19,7 @@ h1 {
 }
 
 h1, h2, h3, h4, h5, h6, ol, ul, thead {
-  font-family: Eina, serif;
+  font-family: 'Graphik', serif;
   color: var(--dark);
   font-weight: revert;
   margin: revert;
@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6, ol, ul, thead {
 }
 
 p, ul, text {
-  font-family: Eina, serif;
+  font-family: Graphik, serif;
   color: var(--gray);
   fill: var(--gray);
   font-weight: revert;
