@@ -11,7 +11,7 @@
   font-style: normal;
   font-weight: 400;
   src: local('Eina'),
-       url('/fonts/eina-400-regular.woff2') format('woff2'); // Chrome 26+, Opera 23+, Firefox 39+  
+       url(../fonts/eina-400-regular.woff2) format('woff2'); // Chrome 26+, Opera 23+, Firefox 39+  
 }
 
 h1 {
@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6, ol, ul, thead {
 }
 
 p, ul, text {
-  font-family: Inter, sans-serif;
+  font-family: 'Eina', serif;
   color: var(--gray);
   fill: var(--gray);
   font-weight: revert;
